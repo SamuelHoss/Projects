@@ -103,6 +103,8 @@ Student (int ID) {
 
 #endif
 
+#if 0
+
 #include <iostream>
 using namespace std;
 
@@ -126,6 +128,35 @@ dog1.age = 4;
 
 
 dog1.print();
+
+
+}
+
+#endif
+
+#include <iostream>
+using namespace std;
+
+struct Student {
+int id;
+float gpa;
+bool enrolled;
+
+void print () {
+    cout << id << " " << gpa << " " << enrolled << endl;
+}
+
+};
+
+int main() {
+
+Student student1;
+
+student1.id = 101;
+student1.gpa = 3.5;
+student1.enrolled = true;
+
+student1.print();
 
 
 }
