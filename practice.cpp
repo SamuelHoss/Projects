@@ -401,6 +401,8 @@ public:
 
 #endif
 
+#if 0
+
 class Phone {
 private:
     int age;
@@ -432,3 +434,125 @@ Phone(int A) {
         this-> age = other.age;
     }
 };
+
+#endif
+
+#if 0
+
+#include  <iostream>
+using namespace std;
+
+class Animal {
+
+public:
+int age;
+
+};
+ 
+class Dog : public Animal {
+
+};
+
+#endif
+
+#if 0
+
+#include <iostream>
+using namespace std;
+
+
+class Animal {
+public:
+int age;
+
+};
+
+class Dog : public Animal {
+
+};
+
+int main() {
+
+Dog myDog;
+
+myDog.age = 5;
+
+cout << myDog.age << endl;
+
+return  0;
+
+}
+
+#endif
+#if 0
+#include <iostream>
+using namespace std;
+
+class Vehicle {
+public:
+int speed;
+
+void printSpeed(){
+cout << speed << endl;
+}
+
+};
+
+class Car : public Vehicle {
+
+
+};
+
+int main() {
+
+Car myCar;
+
+myCar.speed = 60;
+
+myCar.printSpeed();
+
+return 0;
+
+}
+
+#endif
+#if 0
+#include <iostream>
+using namespace std;
+
+int i = 1;
+
+while (i <=3) {
+    cout << i;
+    i++;
+}
+
+#endif
+
+#if 0
+
+int sumDigits(int n) {
+    if(n==0) {
+        return 0;
+    }
+
+return (n % 10) + sumDigits (n / 10);
+}
+
+#endif
+#if 0
+int countDigits(int n) {
+    if(n < 10) {
+        return 1;
+    }
+    return 1 + countDigits (n/10);
+}
+
+#endif
+
+int countDigits(int n) {
+    if(n < 10) { //base case
+        return 1;
+    }
+    return n * countDigits(n / 10); //general case
+}
